@@ -244,6 +244,8 @@ estimate_2
 #b/c this is a pretty good model is what it tells us compared to the one with the sigma that is really different (i.e., the sigmasquared == 0.005)
 exp(estimate_1)
 exp(estimate_2)
+#so when you cancel out the log with the exp function, you basically want the estimate
+#...that is the largest, (which is the one that is closest to zero in the negative log likelihood format)
 
 #we can also try other values of sigmasq and calculate the log likelhiood
 sigma_0.3 <- BMlk(c, inv.c, sigmasq = 0.3, root.state = 0, data = data)
