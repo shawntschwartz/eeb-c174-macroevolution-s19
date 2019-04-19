@@ -1,0 +1,17 @@
+
+Call:
+lm(formula = PIC_ln_trait_testesmass ~ PIC_ln_trait_bodymass - 
+    1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.17577 -0.09486 -0.03646  0.10644  0.41655 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+PIC_ln_trait_bodymass   0.2000     0.1531   1.306    0.211
+
+Residual standard error: 0.1649 on 15 degrees of freedom
+Multiple R-squared:  0.102,	Adjusted R-squared:  0.04218 
+F-statistic: 1.705 on 1 and 15 DF,  p-value: 0.2114
+

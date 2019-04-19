@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = ln_trait_testesmass ~ ln_trait_groupsize)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.36551 -0.19712 -0.02075  0.30820  0.88380 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        -4.94875    0.27217 -18.183 1.25e-11 ***
+ln_trait_groupsize  0.04584    0.04063   1.128    0.277    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5961 on 15 degrees of freedom
+Multiple R-squared:  0.07823,	Adjusted R-squared:  0.01678 
+F-statistic: 1.273 on 1 and 15 DF,  p-value: 0.2769
+

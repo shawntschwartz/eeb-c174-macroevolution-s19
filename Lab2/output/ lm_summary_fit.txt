@@ -1,0 +1,19 @@
+
+Call:
+lm(formula = ln_trait_testesmass ~ ln_trait_bodymass)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.5939 -0.2118  0.1003  0.2903  0.9681 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        -3.9501     0.5667  -6.970  4.5e-06 ***
+ln_trait_bodymass  -0.1455     0.1081  -1.346    0.198    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5864 on 15 degrees of freedom
+Multiple R-squared:  0.1078,	Adjusted R-squared:  0.04832 
+F-statistic: 1.812 on 1 and 15 DF,  p-value: 0.1982
+
