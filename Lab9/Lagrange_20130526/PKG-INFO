@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: Lagrange
+Version: 20130526
+Summary: Likelihood analysis of geographic range evolution
+Home-page: https://github.com/rhr/lagrange-python
+Author: Richard Ree
+Author-email: rree@fieldmuseum.org
+License: GPL
+Description: Lagrange is a Python package implementing likelihood models for
+        geographic range evolution on phylogenetic trees, with methods for
+        inferring rates of dispersal and local extinction and ancestral
+        ranges.
+Platform: ALL
