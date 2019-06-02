@@ -39,3 +39,8 @@ tiplabels(pie = sample_data$B, piecol = c("black", "white"), cex = 0.2, offset =
 tiplabels(pie = sample_data$C, piecol = c("black", "white"), cex = 0.2, offset = 0.2) 
 tiplabels(pie = sample_data$D, piecol = c("black", "white"), cex = 0.2, offset = 0.3) 
 axisPhylo()
+
+#I ran legragrane on the tree, but I wanted to focus on an interesting aspect of the tree
+#vicariance has occured (with hawain islands sinking --> do we see them at the expected evolutionary times of the emergence of these islands)
+
+

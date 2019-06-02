@@ -1,0 +1,5 @@
+Lagrange: likelihood analysis of geographic range evolution
+Version: 20130526
+Author: Richard Ree <rree@fieldmuseum.org>
+https://github.com/rhr/lagrange-python
+

@@ -1,0 +1,162 @@
+Lagrange: likelihood analysis of geographic range evolution
+Version: 20130526
+Author: Richard Ree <rree@fieldmuseum.org>
+https://github.com/rhr/lagrange-python
+
+Newick tree with interior nodes labeled:
+(((t1:6.681697201,(((t6:1.943860938,t7:1.943860938)N3:0.2564040428,(t11:1.619556123,((t17:0.8605859135,t18:0.8605859135)N7:0.07537970442,t16:0.9359656179)N9:0.6835905054)N10:0.5807088571)N11:2.036408271,t2:4.236673252)N13:2.445023949)N14:1.756342702,(((t10:1.730346866,((t14:1.019987943,t15:1.019987943)N18:0.009134121693,t13:1.029122065)N20:0.7012248017)N21:0.9332721617,t5:2.663619028)N23:1.271652841,(((t19:0.6301399509,t20:0.6301399509)N26:0.8521645762,t12:1.482304527)N28:1.401751983,t4:2.88405651)N30:1.051215359)N31:4.502768034)N32:1.561960098,(t3:3.240695461,(t8:1.812839413,t9:1.812839413)N36:1.427856048)N37:6.759304539)N38:0.0;
+
+
+Cladogram (branch lengths not to scale):
+                   ------------------------------------------------+ [A] t1   
+                   :                                                          
+                   :                               ----------------+ [BC] t6  
+                   :               --------------N3+                          
+           -----N14+               :               ----------------+ [B] t7   
+           :       :       -----N11+                                          
+           :       :       :       :       ------------------------+ [B] t11  
+           :       :       :       :       :                                  
+           :       :       :       -----N10+               --------+ [B] t17  
+           :       -----N13+               :       ------N7+                  
+           :               :               ------N9+       --------+ [D] t18  
+           :               :                       :                          
+           :               :                       ----------------+ [B] t16  
+           :               :                                                  
+   -----N32+               ----------------------------------------+ [AB] t2  
+   :       :                                                                  
+   :       :                          -----------------------------+ [A] t10  
+   :       :                          :                                       
+   :       :                 ------N21+                  ----------+ [AB] t14 
+   :       :                 :        :        -------N18+                    
+   :       :                 :        ------N20+         ----------+ [A] t15  
+   :       :        ------N23+                 :                              
+   :       :        :        :                 --------------------+ [A] t13  
+   :       :        :        :                                                
+N38+       :        :        --------------------------------------+ [A] t5   
+   :       ------N31+                                                         
+   :                :                                  ------------+ [D] t19  
+   :                :                      ---------N26+                      
+   :                :          ---------N28+           ------------+ [D] t20  
+   :                :          :           :                                  
+   :                --------N30+           ------------------------+ [A] t12  
+   :                           :                                              
+   :                           ------------------------------------+ [A] t4   
+   :                                                                          
+   :                    -------------------------------------------+ [A] t3   
+   ------------------N37+                                                     
+                        :                    ----------------------+ [B] t8   
+                        ------------------N36+                                
+                                             ----------------------+ [AB] t9  
+
+
+
+Global ML at root node:
+  -lnL = 31.89
+  dispersal = 0.02889
+  extinction = 4.285e-09
+
+Ancestral range subdivision/inheritance scenarios ('splits') at
+internal nodes.
+
+* Split format: [left|right], where 'left' and 'right' are the ranges
+  inherited by each descendant branch (on the printed tree, 'left' is
+  the upper branch, and 'right' the lower branch).
+
+* Only splits within 2 log-likelihood units of the maximum for each
+  node are shown.  'Rel.Prob' is the relative probability (fraction of
+  the global likelihood) of a split.
+
+At node N38:
+   split   lnL     Rel.Prob
+   [A|A]   -32.39  0.6053  
+   [A|AB]  -33.37  0.2286  
+   [AB|A]  -34.81  0.054   
+   [A|B]   -34.9   0.04929 
+   [AB|B]  -35.53  0.02639 
+
+At node N32:
+   split   lnL     Rel.Prob
+   [A|A]   -32.05  0.857   
+   [AB|A]  -34.1   0.1105  
+
+At node N14:
+   split   lnL     Rel.Prob
+   [A|A]   -32.22  0.7226  
+   [A|AB]  -33.81  0.1465  
+   [A|B]   -34.02  0.1192  
+
+At node N13:
+   split   lnL     Rel.Prob
+   [B|AB]  -32.16  0.762   
+   [B|B]   -34.13  0.107   
+   [B|A]   -34.2   0.09921 
+
+At node N11:
+   split   lnL     Rel.Prob
+   [B|B]   -32     0.9018  
+   [B|BD]  -34.72  0.05893 
+
+At node N3:
+   split   lnL     Rel.Prob
+   [B|B]   -31.95  0.9405  
+   [BC|B]  -34.77  0.05612 
+
+At node N10:
+   split   lnL     Rel.Prob
+   [B|B]   -32.04  0.866   
+   [B|BD]  -33.92  0.1314  
+
+At node N9:
+   split   lnL     Rel.Prob
+   [BD|B]  -32.32  0.6519  
+   [B|B]   -32.95  0.3466  
+
+At node N7:
+   split  lnL     Rel.Prob
+   [B|D]  -31.89  1       
+
+At node N31:
+   split   lnL     Rel.Prob
+   [A|A]   -31.99  0.9098  
+   [A|AD]  -34.34  0.08666 
+
+At node N23:
+   split  lnL     Rel.Prob
+   [A|A]  -31.89  0.9983  
+
+At node N21:
+   split  lnL    Rel.Prob
+   [A|A]  -31.9  0.9941  
+
+At node N20:
+   split  lnL     Rel.Prob
+   [A|A]  -31.92  0.9755  
+
+At node N18:
+   split  lnL     Rel.Prob
+   [A|A]  -31.92  0.974   
+
+At node N30:
+   split   lnL     Rel.Prob
+   [A|A]   -32.1   0.8089  
+   [AD|A]  -33.59  0.1834  
+
+At node N28:
+   split  lnL     Rel.Prob
+   [D|A]  -31.89  1       
+
+At node N26:
+   split  lnL     Rel.Prob
+   [D|D]  -31.89  1       
+
+At node N37:
+   split   lnL     Rel.Prob
+   [A|AB]  -32.63  0.4803  
+   [A|A]   -32.95  0.3462  
+   [A|B]   -33.64  0.1735  
+
+At node N36:
+   split   lnL     Rel.Prob
+   [B|AB]  -32.11  0.8036  
+   [B|B]   -33.77  0.1532  
+
