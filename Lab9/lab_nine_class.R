@@ -43,4 +43,13 @@ axisPhylo()
 #I ran legragrane on the tree, but I wanted to focus on an interesting aspect of the tree
 #vicariance has occured (with hawain islands sinking --> do we see them at the expected evolutionary times of the emergence of these islands)
 
+### HW Psychotria
+p_tree <- read.tree("psychotria_tree.tre")
+p_tree <- ladderize(p_tree)
 
+p_data <- read.csv("psychotria_location.csv", header = TRUE, sep = ",")
+
+row.names(p_data) <- p_data$X
+p_data <- p_data[p_tree$tip.label,]
+
+plot(p_tree, cex = 0.001)
